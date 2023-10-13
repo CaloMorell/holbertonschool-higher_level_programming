@@ -6,7 +6,7 @@ CASES
     Oscar
     >>> text_indentation(" ")
     >>> text_indentation("       Oscar      ")
-    Jose
+    Oscar
     >>> text_indentation(".pp")
     .
     <BLANKLINE>
