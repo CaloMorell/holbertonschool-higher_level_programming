@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """Este módulo contiene una función que devuelve
      la suma de dos números enteros.
 """
