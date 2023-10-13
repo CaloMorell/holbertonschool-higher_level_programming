@@ -1,0 +1,64 @@
+IMPORT
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+CASES
+    >>> text_indentation("Oscar")
+    Oscar
+    >>> text_indentation(" ")
+    >>> text_indentation("       Oscar      ")
+    Jose
+    >>> text_indentation(".pp")
+    .
+    <BLANKLINE>
+    pp
+    >>> text_indentation(".....")
+    .
+    <BLANKLINE>
+    .
+    <BLANKLINE>
+    .
+    <BLANKLINE>
+    .
+    <BLANKLINE>
+    .
+    <BLANKLINE>
+
+    >>> text_indentation(156)
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
+
+    >>> text_indentation(3.14159265)
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
+
+    >>> text_indentation(True)
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
+
+    >>> text_indentation(None)
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
+
+    >>> text_indentation([])
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
+
+    >>> text_indentation({})
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
+
+    >>> text_indentation(())
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
+
+    >>> text_indentation([])
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
