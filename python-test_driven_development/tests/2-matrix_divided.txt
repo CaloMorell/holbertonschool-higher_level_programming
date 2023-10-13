@@ -1,0 +1,56 @@
+IMPORT
+    ::
+        >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+LIST
+    ::
+        >>> matrix_divided(None, 2)
+        Traceback (most recent call last):
+            ...
+        TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+        >>> matrix_divided([], 2)
+        Traceback (most recent call last):
+            ...
+        TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+DIV
+    ::
+        >>> matrix_divided([[2,3,2],[2,3,2]], 0)
+        Traceback (most recent call last):
+            ...
+        ZeroDivisionError: division by zero
+
+        >>> matrix_divided([[2,3,2],[2,3,2]], "j")
+        Traceback (most recent call last):
+            ...
+        TypeError: div must be a number
+
+ROWS
+    ::
+        >>> matrix_divided([[2,3,4],[2,3]], 2)
+        Traceback (most recent call last):
+            ...
+        TypeError: Each row of the matrix must have the same size
+
+LISTS
+    ::
+        >>> matrix_divided([["hola", 23, "tal"],[True, 0.7, (2,3)]], 2)
+        Traceback (most recent call last):
+            ...
+        TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+        >>> matrix_divided([[]], 2)
+        Traceback (most recent call last):
+            ...
+        TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+        >>> matrix_divided([[2, 3], []], 2)
+        Traceback (most recent call last):
+            ...
+        TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+NUMBERS
+    ::
+        >>> matrix_divided([[2, 3345345345 ,3.141618], [1, 2, 3], [23, 2938.2, 32]], 2)
+        [[1.0, 1672672672.5, 1.57], [0.5, 1.0, 1.5], [11.5, 1469.1, 16.0]]
