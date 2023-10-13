@@ -1,0 +1,51 @@
+IMPORTS
+    ::
+        >>> add_integer = __import__('0-add_integer').add_integer
+
+NUMBERS
+    ADD TWO INTEGER
+    ::
+        >>> add_integer(2232323, 3543534534)
+        3545766857
+
+    ADD ONE INTEGER WITH ONE FLOAT
+    ::
+        >>> add_integer(3.1416, 2)
+        5
+        >>> add_integer(23, 7.3)
+        30
+
+    ADD TWO FLOAT
+    ::
+        >>> add_integer(73242.54343, 589347.34234238)
+        662589
+
+    NO SECCOND ARGUMENT
+    ::
+        >>> add_integer(2)
+        100
+
+NON-NUMBERS
+    ADD OTHER TYPE
+    ::
+        >>> add_integer("nice try")
+        Traceback (most recent call last):
+            ...
+        TypeError: a must be an integer
+
+        >>> add_integer(10, True)
+        Traceback (most recent call last):
+            ...
+        TypeError: b must be an integer
+
+    NONE
+    ::
+        >>> add_integer(None)
+        Traceback (most recent call last):
+            ...
+        TypeError: a must be an integer
+
+        >>> add_integer(3.2, None)
+        Traceback (most recent call last):
+            ...
+        TypeError: b must be an integer
