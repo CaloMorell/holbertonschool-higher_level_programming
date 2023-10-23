@@ -2,13 +2,12 @@
 """Test Module for testing the Square class"""
 
 
-import unittest
-from test_rectangle import Rectangle
-from test_square import Square
-from test_base import Base
-import test_rectangle
-import test_square
-import test_base
+from models.rectangle import Rectangle
+from models.square import Square
+from models.base import Base
+import models.rectangle
+import models.square
+import models.base
 
 
 class TestSquare(unittest.TestCase):
