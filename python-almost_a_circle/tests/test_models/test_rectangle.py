@@ -3,9 +3,12 @@
 
 
 import unittest
-from rectangle import Test_Rectangle
-from square import Test_Square
-from base import Test_Base
+from test_rectangle import Rectangle
+from test_square import Square
+from test_base import Base
+import test_rectangle
+import test_square
+import test_base
 
 
 class Test_Rectangle(unittest.TestCase):
