@@ -1,10 +1,12 @@
 #!/usr/bin/python3
-"""Module contains a class named BaseGeometry"""
+"""create empty class BaseGeometry
+"""
 
 
-class BaseGeometry:
-"""Creates a class named BaseGeometry"""
-
+class BaseGeometry():
+    """ Task 6: Class BaseGeometry with Exception
+    """
     def area(self):
-        """Raises an exception"""
-        raise Exception('area() is not implemented')
+        """not implemented
+        """
+        raise Exception("area() is not implemented")

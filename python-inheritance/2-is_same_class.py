@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-"""
-Write a function that returns True if the object is exactly
-an instance of the specified class; otherwise False.
+"""identify object is exactly an instance of the specified class
 """
 
 
 def is_same_class(obj, a_class):
-    return issubclass(a_class, type(obj))
+    """ identificate class an object"""
+    if type(obj) is a_class:
+        return True
+    return False
