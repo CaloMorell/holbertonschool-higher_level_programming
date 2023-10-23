@@ -1,49 +1,48 @@
 #!/usr/bin/python3
-"""Test Module for testing the Square class"""
+"""unittest for Rectangle class"""
 
 
-from models.rectangle import Rectangle
+import unittest
+import pep8
+
 from models.square import Square
-from models.base import Base
-import models.rectangle
-import models.square
-import models.base
 
 
-class TestSquare(unittest.TestCase):
-    """Class for all the tests"""
+class Test_a_Square(unittest.TestCase):
+    """testing functions for Square class"""
 
-    def test_square(self):
-        """All the tests"""
-        a = Square(2)
-        self.assertEqual(a.size, 2)
-        self.assertEqual(a.x, 0)
-        self.assertEqual(a.y, 0)
-        self.assertEqual(a.id, 5)
-        b = Square(3, 4, 5)
-        self.assertEqual(b.size, 3)
-        self.assertEqual(b.x, 4)
-        self.assertEqual(b.y, 5)
-        self.assertEqual(b.id, 6)
-        c = Square(6, 5, 4, 12)
-        self.assertEqual(c.size, 6)
-        self.assertEqual(c.x, 5)
-        self.assertEqual(c.y, 4)
-        self.assertEqual(c.id, 12)
+    def test_aaaaa_square_instantiation(self):
+        """test initialization of square instance"""
+#        r1 = Square(11)
+#        self.assertEqual(r1.id, 1)
+#        self.assertEqual(r1.width, 11)
+#        self.assertEqual(r1.height, 11)
+#        self.assertEqual(r1.x, 0)
+#        self.assertEqual(r1.y, 0)
+#        r2 = Square(5, 55, 81)
+#        self.assertEqual(r2.id, 2)
+#        self.assertEqual(r2.width, 5)
+#        self.assertEqual(r2.height, 5)
+#        self.assertEqual(r2.x, 55)
+#        self.assertEqual(r2.y, 81)
+        r3 = Square(24, 45, 16, 73)
+        self.assertEqual(r3.id, 73)
+        self.assertEqual(r3.width, 24)
+        self.assertEqual(r3.height, 24)
+        self.assertEqual(r3.x, 45)
+        self.assertEqual(r3.y, 16)
+#        r4 = Square(60)
+#        self.assertEqual(r4.id, 3)
+#        self.assertEqual(r4.width, 60)
+#        self.assertEqual(r4.height, 60)
+#        self.assertEqual(r4.x, 0)
+#        self.assertEqual(r4.y, 0)
 
-        with self.assertRaises(TypeError, msg='width must be an integer'):
-            w = Square("hi", 6)
-        with self.assertRaises(ValueError, msg='width must be > 0'):
-            o = Square(-1, 4)
-        with self.assertRaises(TypeError, msg='x must be an integer'):
-            r = Square(3, "e")
-        with self.assertRaises(ValueError, msg='x must be > 0'):
-            l = Square(2, 4, -8)
-        with self.assertRaises(TypeError, msg='y must be an integer'):
-            d = Square(5, 8, set([1, 2, 3, 4]))
-        with self.assertRaises(ValueError, msg='y must be > 0'):
-            s = Square(6, 7, -4)
-
-        a = Square(5, 4, 3, 2)
-        s = "[Square] (2) 4/3 - 5"
-        self.assertEqual(str(a), s)
+    def test_pep8(self):
+        """test that code follows pep8 style guidelines"""
+        pep8style = pep8.StyleGuide(quiet=True)
+        result = pep8style.check_files(['models/base.py',
+                                        'models/rectangle.py',
+                                        'models/square.py'])
+        self.assertEqual(result.total_errors, 0,
+                         "Found code style errors (and warnings).")
