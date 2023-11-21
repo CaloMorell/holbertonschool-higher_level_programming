@@ -1,3 +1,2 @@
-  -- Delete a database: `hbtn_0c_0`
-  -- If the database `hbtn_0c_0` doesn't exist, script should not fail
+  -- Delete the database named: `hbtn_0c_0`.
   DROP DATABASE IF EXISTS `hbtn_0c_0`;
