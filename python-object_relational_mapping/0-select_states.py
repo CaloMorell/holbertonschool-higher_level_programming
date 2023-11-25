@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 
-#Este script mostrara los estados ordenados por ID de forma ascendente.
+"""Este script mostrara los estados ordenados por ID de forma ascendente."""
 
 import MySQLdb
-
 from sys import argv
+
 if __name__ == "__main__":
 
     user = argv[1]
