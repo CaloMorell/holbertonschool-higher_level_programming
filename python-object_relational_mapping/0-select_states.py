@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-
 """Este script mostrara los estados ordenados por ID de forma ascendente."""
-
 import MySQLdb
 from sys import argv
 
