@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 """
 Script que imprime el primer objeto State de la base de datos
 """
