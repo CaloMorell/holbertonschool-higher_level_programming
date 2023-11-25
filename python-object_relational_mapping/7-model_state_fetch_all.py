@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 """
 Script que lista todos los objetos State de la base de datos
 """
