@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+Script that selects states based on user input while avoiding SQL injection
+"""
+
+
 import MySQLdb
 from sys import argv
 
