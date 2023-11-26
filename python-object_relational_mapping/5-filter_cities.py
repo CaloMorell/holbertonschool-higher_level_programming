@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+Script lists all cities from the database in ascending order by id
+"""
+
+
 import MySQLdb
 from sys import argv
 
