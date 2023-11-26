@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+Script selects states that match a user input
+"""
+
+
 import MySQLdb
 from sys import argv
 
