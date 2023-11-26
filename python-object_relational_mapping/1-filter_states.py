@@ -28,7 +28,7 @@ if __name__ == '__main__':
         """Ejecuta una consulta SQL para seleccionar estados
         cuyos nombres comienzan con 'N' (mayúscula)"""
         cur.execute(
-            "SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
+            "SELECT * FROM states WHERE UPPER(name) LIKE 'N%' ORDER BY id ASC")
 
         """Obtiene todas las filas devueltas por la consulta SQL"""
         rows = cur.fetchall()
