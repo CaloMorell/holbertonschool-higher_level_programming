@@ -1,3 +1,3 @@
-$('#add_item').click(function () {
-  $('<li>Item</li>').appendTo('UL.my_list');
+$('#update_header').click(function () {
+  $('header').text('New Header!!!');
 });
